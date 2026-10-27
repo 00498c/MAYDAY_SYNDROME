@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MAYDAY_mayday</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff3f7;--bg2:#ffe3ec;--ink:#5a3a48;--soft:#a77b8e;--pink:#f4a6c0;--deep:#d9709a;--card:rgba(255,255,255,.62);--glow:rgba(244,166,192,.55);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a1822;--bg2:#3a2030;--ink:#fbe4ee;--soft:#d6a4ba;--pink:#f4a6c0;--deep:#ff9cc2;--card:rgba(60,32,46,.6);--glow:rgba(244,166,192,.35)}}
+:root[data-theme="dark"]{--bg:#2a1822;--bg2:#3a2030;--ink:#fbe4ee;--soft:#d6a4ba;--pink:#f4a6c0;--deep:#ff9cc2;--card:rgba(60,32,46,.6);--glow:rgba(244,166,192,.35)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,var(--bg),var(--bg2) 60%,var(--bg));background-color:var(--bg);color:var(--ink);font-family:"Gowun Batang","Noto Serif KR",serif;line-height:2;font-size:17px;word-break:keep-all}
+#sp{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+#sp span{position:absolute;color:var(--pink);opacity:0;animation:tw 4s ease-in-out infinite;text-shadow:0 0 8px var(--glow)}
+@keyframes tw{0%,100%{opacity:0;transform:scale(.4) rotate(0)}50%{opacity:.9;transform:scale(1) rotate(45deg)}}
+.hero{position:relative;z-index:1;min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 24px}
+.hero small{letter-spacing:.4em;color:var(--soft);font-size:12px}
+.hero h1{font-family:"Cormorant Garamond","Gowun Batang",serif;font-style:italic;font-weight:500;font-size:clamp(38px,9vw,78px);line-height:1.1;margin:18px 0;color:var(--deep);text-shadow:0 0 24px var(--glow);animation:fl 5s ease-in-out infinite}
+@keyframes fl{0%,100%{opacity:1}50%{opacity:.7}}
+.hero p{color:var(--soft);margin:0}
+.hero .arrow{margin-top:40px;color:var(--pink);animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(8px)}}
+main{position:relative;z-index:1;max-width:680px;margin:0 auto;padding:0 22px 120px}
+.chap{background:var(--card);backdrop-filter:blur(6px);border:1px solid var(--glow);border-radius:24px;padding:34px 28px;margin:0 0 40px;box-shadow:0 10px 40px var(--glow)}
+.chap p{margin:0 0 1.2em}
+.chap p:last-child{margin-bottom:0}
+.ch{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--deep);text-align:center;letter-spacing:.3em;margin:0 0 22px;font-size:15px}
+.big{font-weight:700;color:var(--deep);font-size:20px;text-align:center;text-shadow:0 0 14px var(--glow)}
+.q{font-style:italic;color:var(--deep);padding-left:14px;border-left:2px solid var(--pink)}
+.sep{text-align:center;color:var(--pink);letter-spacing:.6em;margin:1.6em 0!important}
+.end{text-align:center;font-weight:700;color:var(--deep);font-size:19px;text-shadow:0 0 14px var(--glow)}
+.end.s{font-size:22px;font-style:italic}
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1s,transform 1s}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){#sp span,.hero .arrow,.hero h1{animation:none}.rv{transition:none}}
+</style>
+</head>
+<body>
+<div id="sp" aria-hidden="true"></div>
+
+<header class="hero">
+<small>A MAGICAL GIRL STORY</small>
+<h1>MAYDAY<br>mayday</h1>
+<p>메이데이, 메이데이. 들리시나요.</p>
+<div class="arrow">✦</div>
+</header>
+
+<main>
+<section class="chap rv">
+<div class="ch">✦ I ✦</div>
+<p class="big">메이데이, 메이데이. 들리시나요.</p>
+<p>나는 세상을 지키는 수호자의 대리인.</p>
+<p>나의 사명은 세상을 악으로부터 지키고, 사람들에게 꿈과 희망을 심어주는 존재를 찾아 돕는 것. 우리는 수많은 후보들 중에서 가장 정의롭고 선한 자를 선택한다. 그리고 그들에게, 환상을 피워준다. 수호자로부터 선택받은 자들은 그 힘으로 세상을 지키는 사명을 얻는다. 그들은 스스로를 ‘마법소녀’라 불렀고, 피어난 환상을 ‘마법’이라 이름 붙였다. 그래서 나도, 그들이 원하는 대로 불러주었다.</p>
+<p>원래 나는 이름이 없었지만, 그들이 나에게 이름을 지어 주었다.</p>
+</section>
+
+<section class="chap rv">
+<div class="ch">✦ II ✦</div>
+<p>오늘은 나의 <b>몇 번째인지 셀 수도 없는 ‘마법소녀’를 찾은 날</b>이다.</p>
+<p>그 아이는 자신을 ‘김선아’라고 불렀고, 나에게 ‘메이’라는 이름을 지어줬다.</p>
+<p>이름이 생기는 건 언제나 기쁜 일이야.</p>
+</section>
+
+<section class="chap rv">
+<div class="ch">✦ III ✦</div>
+<p>선아는 조금 서툰 아이다. 그래도 괜찮아. 처음은 누구나 어려운 법이니까.</p>
+<p class="q">“괜찮아, 선아야. 하나씩 해보자. 내가 도와줄게.”</p>
+<p class="sep">· · ·</p>
+<p>처음 변신에 성공했을 때, 나는 진심으로 기뻤어.</p>
+<p class="q">“잘했어, 선아야! 정말 멋져! 넌 최고의 마법소녀야!”</p>
+<p class="sep">· · ·</p>
+<p class="q">“이제 곧 어른이 되겠네. 기대된다!”</p>
+<p>오늘은 선아의 고등학교 입학식이다.</p>
+<p>선아와 함께 성장하는 것 같아. 너무 좋다.</p>
+<p class="sep">· · ·</p>
+<p>선아의 마법은 유난히 아름답고 강하다. 네가 보이는 환상은 그 누구보다 찬란하고 괴물을 단번에 쓰러뜨린다. 여태 봐 온 그들 중에서도 가히 최고라고 느꼈다.</p>
+<p class="q">“대단해… 나는 네 파트너라서 정말 기뻐!”</p>
+<p>선아는 바쁜 와중에도 모든 것을 해내려 애썼다. 자신의 삶과 사명을 성실하게 나아가는 선아가 참으로 훌륭했다. 가끔 지쳐 보이는 얼굴을 하는 그 아이에게 힘을 보태고 싶어서. 뭐든 열심히 하는 네가 멋져서 나는ㅡ</p>
+<p class="q">“넌 정말 대단한 아이야.”</p>
+<p class="q">“넌 내 자부심이야, 선아야.”</p>
+<p class="sep">· · ·</p>
+<p>어느샌가 조금씩, 균열이 생기기 시작했다. 하지만 나는 해야 할 말을 알고 있었다.</p>
+<p class="q">“괜찮아, 선아야. 넌 마법소녀잖아.”</p>
+<p class="q">“할 수 있어. 넌 최고의 마법소녀니까.”</p>
+<p>그 말은 언제나 옳았으니까. 그래야만 했다.</p>
+<p class="sep">· · ·</p>
+<p class="q">“괴물이야. 금방 끝내고 가자.”</p>
+<p class="q">“선아야 변신해야 돼.”</p>
+<p class="q">“지금 사람들이 위험해.”</p>
+<p>선아는 처음으로 망설였다. 낯선 모습이었다. 서툴던 때에도 못 본 얼굴이야.</p>
+<p>그래도 나는 같은 말을 반복했다.</p>
+<p class="q">“늦으면 되돌릴 수 없어.”</p>
+<p class="q">“너만이 할 수 있어.”</p>
+<p>네가 아니면 이 세상이 악으로 물든다. 그건 사실이니까.</p>
+</section>
+
+<section class="chap rv">
+<div class="ch">✦ IV ✦</div>
+<p>선아에게 괴물이라고, 변신해야 한다고 말할 때마다 그 애의 표정이 점점 굳어진다. 최근 들어 유난히 지쳐 보이는 것 같기도 해. 무슨 일일까. 그래도 괜찮다. 선아는 언제나 이겨냈으니까. 이번에도 금방 괜찮아질 거야.</p>
+<p>요즘 선아가 마법소녀에만 몰두하고 있다. 사명을 다하는 건 좋은 일이다. 그건 올바른 방향이다. 그런데… 왜인지 모르겠다. 그 아이가 조금 이상한 것 같다.</p>
+<p>오늘은 평소보다 강한 괴물이었다. 그래도 역시 선아다. 무사히 쓰러뜨렸구나. 너는 점점 강해지는 것 같아. 역시 최고의 마법소녀야. 나는 멍하니 서 있는 그 아이를 향해 계속해서 말했다.</p>
+<p>선아야 괴물이야, 가야 해. 이 마법은 너의 것이야.</p>
+<p>지금 위험해. 어서 세상을 구하러 가자. 넌 마법소녀니까.</p>
+<p>선아는 대답하지 않았다. 네가 아니면 안 돼. 왜인지 모르겠다. 내 목소리가 조금씩 흐려진다. 몸도 점점 둔해지는 것 같다. 이상하다. 그래도 나는 계속 말을 걸었다. 그게 나의 역할이니까. 끝내 대답은 들리지 않았다. 선아는 자꾸 나를 이상한 곳에 두고 간다. 여긴 조용하다. 괴물도 없다. 여기가 아닌 걸, 여기에 있으면 안 되는데. 그래서 나는 괴물이 나타날 때마다 그 아이에게 찾아갔다. 알려줘야 하니까. 그게 대리인의 사명이니까. 눈앞이 캄캄하다. 조금 졸린 것 같기도 하다. 말을 너무 많이 해서 그런 걸까. 조금 쉬다가 다시 말을 걸어봐야겠어. 그때는 선아가 다시 한 번 변신해 주면 좋겠다.</p>
+<p class="end s">“선아야.”</p>
+<p class="end">이 세상을 구할 수 있는 건, 너뿐이니까. ✦</p>
+</section>
+</main>
+
+<script>
+(function(){
+var sp=document.getElementById('sp'),ch=['✦','✧','·','✦','✧'];
+for(var i=0;i<30;i++){var s=document.createElement('span');s.textContent=ch[i%5];
+s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';
+s.style.fontSize=(8+Math.random()*16)+'px';s.style.animationDelay=(Math.random()*4)+'s';
+s.style.animationDuration=(3+Math.random()*3)+'s';sp.appendChild(s);}
+var rv=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}});},{threshold:.05});rv.forEach(function(r){io.observe(r);});}
+else{rv.forEach(function(r){r.classList.add('on');});}
+})();
+</script>
+</body>
+</html>
